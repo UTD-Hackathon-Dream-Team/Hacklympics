@@ -11,7 +11,8 @@ public class PlayerCollision : MonoBehaviour
         {
             movement.enabled = false;
         }
-
+        // && collisionInfo.collider.tag == "Mountain_winter_002"
+        
     }
 
 }
