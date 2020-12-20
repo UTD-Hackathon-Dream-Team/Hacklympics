@@ -12,6 +12,7 @@ public class PlayerCollision : MonoBehaviour
             movement.enabled = false;
             var gameOver = FindObjectOfType<EndGame>();
             gameOver.ShowButtons();
+            GameObject.Find("Player").SendMessage("Finish");
         }
         // && collisionInfo.collider.tag == "Mountain_winter_002"
 
