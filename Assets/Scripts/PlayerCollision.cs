@@ -7,12 +7,14 @@ public class PlayerCollision : MonoBehaviour
     void OnCollisionEnter(Collision collisionInfo)
     {
         //Debug.Log(collisionInfo.collider.name);
-        if(collisionInfo.collider.tag == "Obstacle")
+        if (collisionInfo.collider.tag == "Obstacle")
         {
             movement.enabled = false;
+            var gameOver = FindObjectOfType<EndGame>();
+            gameOver.ShowButtons();
         }
         // && collisionInfo.collider.tag == "Mountain_winter_002"
-        
+
     }
 
 }
