@@ -3,8 +3,8 @@
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public float forwardForce = 2000f;
-    public float sidewaysForce = 500f;
+    public float forwardForce = 20f;
+    public float sidewaysForce = 5f;
 
     // Update is called once per frame
     void FixedUpdate()
